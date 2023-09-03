@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        .input-field:focus {
+            outline: none;
+            border: 2px solid purple;
+        }
+        .remember-me {
+            margin-bottom: 20px;
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: purple;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background-color: #9932CC;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="username" class="input-field" placeholder="Username">
+        <input type="password" id="password" class="input-field" placeholder="Password">
+        <div class="remember-me">
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Remember Me</label>
+        </div>
+        <button id="loginButton" class="login-button">Login</button>
+    </div>
+</body>
+</html>
